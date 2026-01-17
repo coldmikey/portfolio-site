@@ -4,38 +4,131 @@
     <meta charset="UTF-8">
     <title>coldmikey</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<audio id="click-sound" preload="auto">
+    <source src="click.mp3" type="audio/mpeg">
+</audio>
 
 <canvas id="stars"></canvas>
+<canvas id="snow"></canvas>
 
+<button id="snow-toggle">❄️</button>
+
+<!-- HERO -->
 <section class="hero">
-    <h1>Салют, это <span>coldmikey</span></h1>
-<p class="subtitle">Я создаю видео, которое вам нужно</p>
+    <div class="hero-inner">
 
-    <div class="stats">
-        <div class="card">
-            <h2>15+</h2>
-            <p>проектов<br>завершено</p>
-        </div>
-        <div class="card">
-            <h2>1M+</h2>
-            <p>просмотров</p>
-        </div>
-        <div class="card">
-            <h2>99%</h2>
-            <p>довольных<br>клиентов</p>
-        </div>
-    </div>
+        <h1 class="reveal">Салют, это <span>coldmikey</span></h1>
+        <p class="subtitle reveal delay-1">Я создаю видео, которое вам нужно</p>
 
-    <a class="btn" href="https://t.me/" target="_blank">Telegram</a>
+        <div class="stats">
+            <div class="card">
+                <h2>15+</h2>
+                <p>проектов<br>завершено</p>
+            </div>
+            <div class="card">
+                <h2>1M+</h2>
+                <p>просмотров</p>
+            </div>
+            <div class="card">
+                <h2>99%</h2>
+                <p>довольных<br>клиентов</p>
+            </div>
+        </div>
 
-    <div class="scroll">
-        смотри мои работы ниже ↓
+        <a class="btn" href="https://t.me/coldmikey" target="_blank">
+            Telegram
+        </a>
+
+        <div class="scroll">
+            смотри мои работы ниже ↓
+        </div>
+
     </div>
 </section>
 
+<!-- PRICING -->
+<section class="pricing">
+    <div class="container">
+
+        <h2>
+            Давайте поднимем ваш контент на<br>
+            <span>новый уровень</span>
+        </h2>
+
+        <div class="pricing-cards">
+
+            <div class="price-card">
+                <h3>REELS</h3>
+                <div class="price">от 1500₽</div>
+                <div class="price-sub">за минуту видео</div>
+
+                <ul>
+                    <li>Нарезка исходного материала</li>
+                    <li>Базовая цветокоррекция</li>
+                    <li>Динамичные субтитры</li>
+                    <li>Фоновая музыка</li>
+                </ul>
+
+                <div class="time">⏱ 4–10 часов</div>
+                <a href="#" class="btn small">Купить</a>
+            </div>
+
+            <div class="price-card featured">
+                <h3>MOTION GRAPHICS</h3>
+                <div class="price">от 2000₽</div>
+                <div class="price-sub">за минуту видео</div>
+
+                <ul>
+                    <li>Монтаж по сценарию</li>
+                    <li>Цветокоррекция</li>
+                    <li>Динамичные субтитры</li>
+                    <li>Музыка и звуковые эффекты</li>
+                    <li>Переходы и эффекты</li>
+                </ul>
+
+                <div class="time">⏱ В зависимости от длины</div>
+                <a href="#" class="btn small">Купить</a>
+            </div>
+
+            <div class="price-card">
+                <h3>ГОРИЗОНТАЛЬНОЕ ВИДЕО</h3>
+                <div class="price">от 1000₽</div>
+                <div class="price-sub">за минуту видео</div>
+
+                <ul>
+                    <li>Креативный монтаж</li>
+                    <li>Расширенная цветокоррекция</li>
+                    <li>Динамичные субтитры</li>
+                    <li>Продвинутые эффекты</li>
+                    <li>Элементы в пространстве</li>
+                </ul>
+
+                <div class="time">⏱ В зависимости от длины</div>
+                <a href="#" class="btn small">Купить</a>
+            </div>
+            </audio>
+
+        </div>
+    </div>
+</section>
+
+<!-- 🔊 SOUND BUTTON -->
+<button id="sound-toggle" aria-label="Toggle sound">🔇</button>
+
+<!-- 🔊 AUDIO -->
+<audio id="bg-music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
-
