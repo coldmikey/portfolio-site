@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: radial-gradient(circle at top, #0b1d2a 0%, #05090d 60%);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h1 span {
+    color: #19b5ff;
+}
+
+/* Подзаголовок */
+.subtitle {
+    margin-top: 14px;
+    font-size: 18px;
+    color: #9aa4ad;
+}
+
+/* Статистика */
+.stats {
+    display: flex;
+    gap: 24px;
+    margin: 48px 0;
+}
+
+.card {
+    width: 170px;
+    padding: 22px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #19b5ff;
+}
+
+.card p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #b5bcc3;
+    line-height: 1.4;
+}
+
+/* Кнопка */
+.btn {
+    margin-top: 10px;
+    padding: 14px 36px;
+    border-radius: 8px;
+    border: 1px solid #19b5ff;
+    color: #19b5ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #19b5ff;
+    color: #05090d;
+}
+
+/* Подсказка вниз */
+.scroll {
+    position: absolute;
+    bottom: 32px;
+    font-size: 12px;
+    color: #7d8790;
+    opacity: 0.7;
+}
